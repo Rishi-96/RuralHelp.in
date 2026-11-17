@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #FAF8F5;
+    color: #1E293B;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  h1, h2, h3, h4, .font-editorial {
+    font-family: 'Newsreader', Georgia, serif;
+  }
+}
+
+@layer utilities {
+  /* Hairline borders as specified in DESIGN.md */
+  .border-hairline {
+    border-color: rgba(30, 41, 59, 0.12);
+  }
+  
+  .border-hairline-strong {
+    border-color: rgba(30, 41, 59, 0.25);
+  }
+
+  /* Micro-offset tactile shadows - physical shopkeeper tools */
+  .tactile-button {
+    box-shadow: 2px 2px 0px #0E382B;
+    transition: all 0.1s ease-in-out;
+  }
+
+  .tactile-button:hover {
+    transform: translate(-1px, -1px);
+    box-shadow: 3px 3px 0px #0E382B;
+  }
+
+  .tactile-button:active {
+    transform: translate(1px, 1px);
+    box-shadow: 1px 1px 0px #0E382B;
+  }
+
+  .tactile-lime-button {
+    box-shadow: 2px 2px 0px #457000;
+    transition: all 0.1s ease-in-out;
+  }
+
+  .tactile-lime-button:hover {
+    transform: translate(-1px, -1px);
+    box-shadow: 3px 3px 0px #457000;
+  }
+
+  .tactile-lime-button:active {
+    transform: translate(1px, 1px);
+    box-shadow: 1px 1px 0px #457000;
+  }
+
+  .tactile-card {
+    box-shadow: 2px 2px 0px rgba(30, 41, 59, 0.08);
+  }
+}
